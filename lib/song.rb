@@ -21,24 +21,5 @@ class Song
     binding.pry
 return song
 
-  @@all = []
-  attr_accessor :name, :artist, :all
-  def initialize(name)
-    @name = name
-    @song = []
-  end
-  
-  def self.all
-    
-    @@all
-  end
-  
-  def new_by_filename(title)
-   
-    song = Song.new(title.split(" - ")[1])
-    song.artist = title.split(" - ")[0]
-    @@all << song
-    @song << song
 
-  end
 end
