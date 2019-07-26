@@ -18,7 +18,7 @@ class Song
     song = Song.new(title.split(" - ")[1])
     song.artist = artist
   artist.add_song(song)
-    binding.pry
+    
 return song
 end
 
