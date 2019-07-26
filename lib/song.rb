@@ -2,7 +2,7 @@ require 'pry'
 
 class Song
   
-<<<<<<< HEAD
+
 
   attr_accessor :name, :artist
   def initialize(name)
@@ -20,7 +20,7 @@ class Song
   artist.add_song(song)
     binding.pry
 return song
-=======
+
   @@all = []
   attr_accessor :name, :artist, :all
   def initialize(name)
@@ -39,6 +39,6 @@ return song
     song.artist = title.split(" - ")[0]
     @@all << song
     @song << song
->>>>>>> d8ff5ca16400ed050ab0e37a83e8c5078dbbe760
+
   end
 end
